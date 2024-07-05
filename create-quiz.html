@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create a Quiz</h1>
+    </header>
+    <main>
+        <form id="quizForm">
+            <div id="questionsContainer">
+                <div class="question">
+                    <label>Question: <input type="text" name="question"></label><br>
+                    <label>Option A: <input type="text" name="optionA"></label><br>
+                    <label>Option B: <input type="text" name="optionB"></label><br>
+                    <label>Option C: <input type="text" name="optionC"></label><br>
+                    <label>Option D: <input type="text" name="optionD"></label><br>
+                    <label>Correct Answer: 
+                        <select name="correctAnswer">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <button type="button" onclick="addQuestion()">Add Another Question</button>
+            <button type="button" onclick="saveQuiz()">Save Quiz</button>
+        </form>
+        <button onclick="goBack()">Back</button>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
